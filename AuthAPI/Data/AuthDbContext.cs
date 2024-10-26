@@ -9,6 +9,6 @@ namespace AuthAPI.Data
         {
         }
 
-        public DbSet<User> Users { get; set; } // كيان المستخدم
+        public DbSet<User> Users { get; set; }
     }
 }

@@ -10,6 +10,6 @@ namespace AuthAPI.Models
         public string Username { get; set; }
 
         [Required]
-        public string Password { get; set; } // تأكد من تأمين كلمة المرور بشكل جيد
+        public string Password { get; set; } // تأكد تأمين كلمة السر 
     }
 }

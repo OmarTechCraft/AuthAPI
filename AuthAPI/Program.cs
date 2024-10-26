@@ -1,9 +1,10 @@
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
+using AuthAPI.Data; //  √ﬂœ „‰  ⁄œÌ· «·„”«— ≈–« ·“„ «·√„—
 
 var builder = WebApplication.CreateBuilder(args);
 
-// ≈÷«›… Œœ„«  «·‹ DbContext
+// ≈÷«›… Œœ„«  DbContext „⁄ «” Œœ«„ « ’«· Supabase
 builder.Services.AddDbContext<AuthDbContext>(options =>
     options.UseNpgsql(builder.Configuration.GetConnectionString("SupabaseConnection")));
 
